@@ -8,10 +8,8 @@ if [ ! -d "$folder_path" ]; then
   exit 1
 fi
 
-# 获取VPS的公网IP
 vps_ip=$(curl -s ifconfig.me)
 
-# 检查是否获取到公网IP
 if [ -z "$vps_ip" ]; then
   echo "无法获取VPS的公网IP。"
   exit 1
