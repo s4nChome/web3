@@ -1,7 +1,6 @@
 #!/bin/bash
 
-echo "请输入文件路径："
-read folder_path
+folder_path="/root/ocean-nodes"
 
 if [ ! -d "$folder_path" ]; then
   echo "输入的路径无效，请重新运行脚本并提供正确的路径。"
